@@ -20,8 +20,10 @@ The primary model tests whether proportional callosal volume decreases with incr
 
 The model can be expressed as:
 
-CC_prop_i = β₀ + β₁·TIV_i + β₂·TIV²_i + β₃·Sex_i + β₄·Age_i + β₅·Handedness_i  
-           + β₆·(TIV_i × Sex_i) + β₇·(TIV_i × Age_i) + β₈·(TIV_i × Handedness_i) + ε_i
+CC_prop_i = β₀ + β₁·TIV_i + β₂·TIV²_i + β₃·Sex_i + β₄·Age_i + β₅·Handedness_i
+          + β₆·(TIV_i × Sex_i) + β₇·(TIV²_i × Sex_i)
+          + β₈·(TIV_i × Age_i) + β₉·(TIV²_i × Age_i)
+          + β₁₀·(TIV_i × Handedness_i) + β₁₁·(TIV²_i × Handedness_i) + ε_i
 
 Where:
 - **CC_prop** = Corpus callosum volume / Total intracranial volume
